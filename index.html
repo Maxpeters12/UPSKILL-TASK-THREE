@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+</head>
+ <body>
+    <h1>Survey form</h1>
+    <form id="surveyform" action="formsubmit/submit.html" method="POST"></form>
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="">
+
+    <div>
+        <label for="name" id="label-name">Name</label> <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+        <label for="email" id="label-email">Email</label> <br>
+        <input type="email" id="Email" name="name" placeholder="Enter your email" required>
+    </div>
+    <div>
+        <label for="role" id="label-role">Role</label> <br>
+        <select name="role" id="role" required>
+            <option value="" disabled selected>Select your role</option>
+            <option value="">Student</option>
+            <option value="">Teacher</option>
+            <option value="">Parent</option>
+            <option value="">Other</option>
+    </div>
+    <div>
+        <label for="would you recommend genesys to a friend" id="would you recommend genesys to a friend">Would you recommend genesys to a friend</label> <br>
+        
+        <label for=""><input type="radio" id="recommend" name="recommend" required> Yes</label>
+    </div>
+
+    <div>
+        <label for="name" id="label-name">Gender</label><br> 
+        <input type="radio" id="gender" value="male"required>
+    </div>
+    <div>
+        <label for="name" id="label-name">
+            <small>(Check all that apply)</small> 
+        </label><br>
+
+        <label><input type="checkbox" name="language" value="c"required>C</label>
+        <label><input type="checkbox" name="language" value="c++"required>C++</label>
+        <label><input type="checkbox" name="language" value="c#"required>C#</label>
+        <label><input type="checkbox" name="language" value="javascript"required>Javascript</label>
+        <label><input type="checkbox" name="language" value="python"required>Python</label>
+    </div>
+
+    <div>
+        <label for="name" id="label-name">Any comment or suggestion</label><br> 
+        <textarea name="text" id="comment" rows="4" >
+
+    </div>
+
+
+ </body>
+</html>

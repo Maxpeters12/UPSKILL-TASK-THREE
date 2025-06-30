@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.bio-section {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    max-width: 250px; 
+    height: auto;
+    border-radius: 10%; 
+    border: 5px solid #007bff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover; 
+}
+
+.description-container {
+    flex: 1; 
+    padding: 10px;
+}
+
+
+.share-journey-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.share-journey-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+    resize: vertical; 
+}
+
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+@media (min-width: 768px) {
+    .bio-section {
+        flex-direction: row; 
+        text-align: left;
+    }
+
+    .image-container {
+        flex-shrink: 0; 
+    }
+}
